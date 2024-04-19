@@ -68,7 +68,7 @@ namespace TriadBuddyPlugin
             }
 
             cachedScreenState = screenOb;
-            if (currentNpc != null && screenOb.turnState == ScannerTriad.ETurnState.Active && !stateOb.isPvP)
+            if (currentNpc != null && screenOb.turnState == ScannerTriad.ETurnState.Active)
             {
                 var updateFlags = screenMemory.OnNewScan(screenOb, currentNpc);
                 if (updateFlags != TriadGameScreenMemory.EUpdateFlags.None)
